@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+    <meta charset="utf-8" />
+    <title>TechMark</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Techmark Solutions" name="description" />
+    <meta content="TechMark" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="../static/assets/images/logo-sm.png">
+    <!-- jsvectormap css -->
+    <link href="../static/assets/libs/jsvectormap/css/jsvectormap.min.css" rel="stylesheet" type="text/css" />
+    <!--Swiper slider css-->
+    <link href="../static/assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
+    <!-- Layout config Js -->
+    <script src="../static/assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="../static/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="../static/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="../static/assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="../static/assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+    <header id="page-topbar">
+    <div class="layout-width">
+        <div class="navbar-header">
+            <div class="d-flex">
+                <!-- LOGO -->
+                <div class="navbar-brand-box horizontal-logo">
+                    <a href="index.html" class="logo logo-dark">
+                        <span class="logo-sm">
+                            <img src="../static/assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="../static/assets/images/logo-dark.png" alt="" height="17">
+                        </span>
+                    </a>
+
+                    <a href="index.html" class="logo logo-light">
+                        <span class="logo-sm">
+                            <img src="../static/assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="../static/assets/images/logo-light.png" alt="" height="17">
+                        </span>
+                    </a>
+                </div>
+
+                <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger" id="topnav-hamburger-icon">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+            </div>
+
+            <div class="d-flex align-items-center">
+                <div class="dropdown d-md-none topbar-head-dropdown header-item">
+                    <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle" id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bx bx-search fs-22"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-search-dropdown">
+                        <form class="p-3">
+                            <div class="form-group m-0">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                    <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="ms-1 header-item d-none d-sm-flex">
+                    <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle" data-toggle="fullscreen">
+                        <i class='bx bx-fullscreen fs-22'></i>
+                    </button>
+                </div>
+
+                <div class="ms-1 header-item d-none d-sm-flex">
+                    <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle light-dark-mode">
+                        <i class='bx bx-moon fs-22'></i>
+                    </button>
+                </div>
+
+                <div class="dropdown ms-sm-3 header-item topbar-user">
+                    <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="d-flex align-items-center">
+                            <i class='ri-menu-4-fill fs-22'></i>
+                            <span class="text-start ms-xl-2">
+                                <span id="useremail" class="d-none d-xl-inline-block ms-1 fw-medium user-name-text"></span>
+                                <span id="userfullname" class="d-none d-xl-block ms-1 fs-12 user-name-sub-text"></span>
+                            </span>
+                        </span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <!-- item-->
+                        <h6 class="dropdown-header">Welcome</h6>
+                        <a class="dropdown-item" href="pricing.html"><i class="mdi mdi-lifebuoy text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Pricing</span></a>
+                        <a class="dropdown-item" href="faqs.html"><i class="mdi mdi-lifebuoy text-muted fs-16 align-middle me-1"></i> <span class="align-middle">FAQ's</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="settings.html"><i class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Settings</span></a>
+                        <a class="dropdown-item" href="auth-lockscreen-basic.html"><i class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Lock screen</span></a>
+                        <a class="dropdown-item" href="logout.html"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <!-- ========== App Menu ========== -->
+        <div class="app-menu navbar-menu">
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+                <!-- Dark Logo-->
+                <a href="index.html" class="logo logo-dark">
+                    <span class="logo-sm">
+                        <img src="../static/assets/images/logo-sm.png" alt="" height="22">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="../static/assets/images/logo-dark.png" alt="" height="17">
+                    </span>
+                </a>
+                <!-- Light Logo-->
+                <a href="index.html" class="logo logo-light">
+                    <span class="logo-sm">
+                        <img src="../static/assets/images/logo-sm.png" alt="" height="22">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="../static/assets/images/logo-light.png" alt="" height="17">
+                    </span>
+                </a>
+                <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
+                    <i class="ri-record-circle-line"></i>
+                </button>
+            </div>
+
+            <div id="scrollbar">
+                <div class="container-fluid">
+                    <div id="two-column-menu"></div>
+                    <ul class="navbar-nav" id="navbar-nav">
+                        <li class="menu-title"><span data-key="t-menu">Menu</span></li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                                <i class="ri-dashboard-2-line"></i> <span data-key="t-dashboards">Email Campaign</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarDashboards">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="index.html" class="nav-link" data-key="t-analytics">Dashboard</a>
+                                    </li>
+                                    <li class="nav-item"></li>
+                                        <a href="email-campaigns.html" class="nav-link" data-key="t-analytics">Campaigns</a>
+                                    </li>
+                                    <li class="nav-item"></li>
+                                        <a href="add-campaign.html" class="nav-link" data-key="t-analytics">Add Campaign</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li> <!-- end Dashboard Menu -->
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+
+            <div class="sidebar-background"></div>
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- Vertical Overlay-->
+        <div class="vertical-overlay"></div>
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0">New Campaign</h4>
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Email Campaign</a></li>
+                                        <li class="breadcrumb-item active">Add Campaign</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- end page title -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="live-preview">
+                                            <form action="javascript:void(0);">
+                                                <div class="row mb-0">
+                                                    <div class="col-8"><h6>EMAIL CAMPAIGN</h6></div>
+                                                    <div class="col-4" style="text-align: right">
+                                                        <button type="button" class="btn" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ri-menu-fill" style="font-size: 24px;"></i></button>
+                                                        <div class="dropdown-menu">
+                                                            <!--<a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#ModalFullscreenLg">Insert a template</a>
+                                                            <div class="dropdown-divider"></div>-->
+                                                            <div id="toggle-cc-btn"><a class="dropdown-item" id="ccon" onclick="dropdown(this)">Cc</a></div>
+                                                            <div id="toggle-bcc-btn"><a class="dropdown-item" id="bccon" onclick="dropdown(this)">Bcc</a></div>
+                                                            <div id="toggle-replyto-btn"><a class="dropdown-item" id="replytoon" onclick="dropdown(this)">Reply to</a></div>
+                                                            <!--<a class="dropdown-item" href="#">Reply to</a>-->
+                                                            <div class="dropdown-divider"></div>
+                                                            <!--<a class="dropdown-item" href="#">Send a test email</a>-->
+                                                            <a class="dropdown-item" data-bs-toggle="modal" data-bs-target=".bs-modal-lg2" href="#">Select Recipients</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-1">
+                                                        <label for="nameInput" class="form-label">From</label>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-3">
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="sender">Select Sender</button>
+                                                            <div class="dropdown-menu" id="sender-list">
+                                                                <a class="dropdown-item" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg1" href="javascript:void(0);">Manage Sender</a>
+                                                            </div>
+                                                        </div><!-- /btn-group -->
+                                                        <!--  Large modal example -->
+                                                        <div class="modal fade bs-example-modal-lg1 fade zoomIn" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h4 class="modal-title" id="myLargeModalLabel">Manage Sender</h4>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <div class="row">
+                                                                            <div class="card">
+                                                                                <div class="card-body">
+                                                                                    <div class="row" style="min-height: 10cm;">
+                                                                                        <div class="col-lg-3">
+                                                                                            <div class="nav flex-column nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                                                                <hr><a class="nav-link mb-2 active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Active Alises</a>
+                                                                                                <a class="nav-link mb-2" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Create New Alises</a><hr>
+                                                                                            </div>
+                                                                                        </div><!-- end col -->
+                                                                                        <div class="col-lg-9 mt-4">
+                                                                                            <div class="tab-content text-muted mt-4 mt-md-0" id="v-pills-tabContent">
+                                                                                                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                                                                                    <h5 class="modal-title" id="myLargeModalLabel">Active Alises</h5>
+                                                                                                    <p>You have configured the following aliases</p><hr>
+                                                                                                    <!-- Small Tables -->
+                                                                                                    <table class="table table-sm table-nowrap">
+                                                                                                        <thead>
+                                                                                                            <tr>
+                                                                                                                <th scope="col">Name</th>
+                                                                                                                <th scope="col">Email</th>
+                                                                                                                <th scope="col">Status</th>
+                                                                                                            </tr>
+                                                                                                        </thead>
+                                                                                                        <tbody id="verifiedemailslist">
+                                                                                                            <tr>
+                                                                                                                <td>No Data Found</th>
+                                                                                                            </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+                                                                                                </div>
+                                                                                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                                                                                    <h5 class="modal-title" id="myLargeModalLabel">Create New Alise</h5>
+                                                                                                    <p>Verify Your email to create new Alise</p><hr>
+                                                                                                    <form action="">
+                                                                                                        <div class="row mb-3">
+                                                                                                            <div class="col-lg-2">
+                                                                                                                <label for="nameInput" class="form-label">Name</label>
+                                                                                                            </div>
+                                                                                                            <div class="col-lg-10">
+                                                                                                                <input type="text" class="form-control" id="newemailname" placeholder="Name">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="row mb-3">
+                                                                                                            <div class="col-lg-2">
+                                                                                                                <label for="newemail" class="form-label">Email Id</label>
+                                                                                                            </div>
+                                                                                                            <div class="col-lg-10">
+                                                                                                                <input type="email" class="form-control" id="newemail" oninput="getEmail()" placeholder="Email" required>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="row mb-3">
+                                                                                                            <div class="col-lg-2">
+                                                                                                                <label for="newalternateemail" class="form-label">Alise Email</label>
+                                                                                                            </div>
+                                                                                                            <div class="col-lg-6">
+                                                                                                                <input type="email" class="form-control" id="newaliseemail" placeholder="Alise Email" required>
+                                                                                                            </div>
+                                                                                                            <div class="col-lg-4">
+                                                                                                                <span id="domain"></span>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="row mb-3">
+                                                                                                            <div class="col-lg-2">
+                                                                                                                <label for="newemailpassword" class="form-label">Password</label>
+                                                                                                            </div>
+                                                                                                            <div class="col-lg-10">
+                                                                                                                <input type="password" class="form-control" id="newemailpassword" placeholder="Password" required>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="row mb-3">
+                                                                                                            <div class="col-lg-12" id="verifyBtn" style="text-align: center;">
+                                                                                                                <button type="button" class="btn rounded-pill btn-light waves-effect" onclick="verifyEmail()">Verify Email</button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </form>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div><!--  end col -->
+                                                                                    </div>
+                                                                                    <!--end row-->
+                                                                                </div><!-- end card-body -->
+                                                                            </div><!-- end card -->
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <a href="javascript:void(0);" class="btn btn-link link-success fw-medium" data-bs-dismiss="modal"><i class="ri-close-line me-1 align-middle"></i> Close</a>
+                                                                    </div>
+                                                                </div><!-- /.modal-content -->
+                                                            </div><!-- /.modal-dialog -->
+                                                        </div><!-- /.modal -->
+                                                    </div>
+                                                    <div class="col-lg-1">
+                                                        <label for="nameInput" class="form-label">To (Recipients)</label>
+                                                    </div>
+                                                    <div class="col-lg-5 mb-3">
+                                                        <button class="btn btn-light btn-border" data-bs-toggle="modal" id="select-recipient" data-bs-target=".bs-modal-lg2">Select Recipients</button>
+                                                    </div>
+                                                </div>
+                                                <div id="Cc"></div>
+                                                <div id="Bcc"></div>
+                                                <div id="Replyto"></div>
+                                                <div class="row mb-3">
+                                                    <div class="col-lg-1">
+                                                        <label for="subject" class="form-label">Subject</label>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <input type="text" class="form-control" id="subject" placeholder="Enter your email subject">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div style="margin:auto; padding:0px 0px 0px; max-width: 100%;">
+                                                        <div class="hs-docs-content-divider">
+                                                            <!--Include the JS & CSS-->
+                                                            <link rel="stylesheet" href="assets/editor/res/style.css" />
+                                                            <link rel="stylesheet" href="assets/editor/richtexteditor/rte_theme_default.css" />
+                                                            <script type="text/javascript" src="assets/editor/richtexteditor/rte.js"></script>
+                                                            <script>RTE_DefaultConfig.url_base='assets/editor/richtexteditor'</script>
+                                                            <script type="text/javascript" src='assets/editor/richtexteditor/plugins/all_plugins.js'></script>
+                                                            <div id="div_editor1"></div>
+                                                            <div class="d-grid gap-2" style="margin-top: -24px;" id="send_emails_btn">
+                                                                <button class="btn btn-primary" type="button" onclick="send_email()">SEND EMAILS <i class="ri-send-plane-2-fill fs-10"></i></button>
+                                                            </div>
+                                                            <script>
+                                                                var editor1 = new RichTextEditor("#div_editor1", { skin: "green", toolbar: "default" });
+                                                            </script>
+                                                            <script src="assets/editor/res/patch.js"></script>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <!-- Variants -->
+                                                    <table class="table table-nowrap">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">Sr.No</th>
+                                                                <th scope="col">Email</th>
+                                                                <th scope="col">Status</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id="mailLog"></tbody>
+                                                    </table>
+                                                    <span>Emails Sent <span id="seccessEmails">0</span></span>
+                                                    <span>Emails Unsent <span id="failedEmails">0</span></span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3" id="recipients"></div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="card-body">
+                                        <div class="live-preview">
+                                            <div class="modal fade bs-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="myLargeModalLabel">Select Recipients</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="row" style="text-align: center; min-height: 420px;">
+                                                                <div class="col-md-4">
+                                                                    <br><button type="button" id="type" class="btn btn-info btn-label waves-effect waves-light" style="width: 5cm;"><i class="ri-file-copy-line label-icon align-middle fs-16 me-2"></i>Copy/Paste</button>
+                                                                    <!--<br><br>
+                                                                    <button type="button" id="contacts" onclick="uploadoptions(this)" class="btn btn-warning btn-label waves-effect waves-light" style="width: 5cm;"><i class="ri-contacts-book-fill label-icon align-middle fs-16 me-2"></i>Contact List</button>
+                                                                    <br><br> 
+                                                                    <button type="button" id="excel" onclick="uploadoptions(this)" class="btn btn-primary btn-label waves-effect waves-light" style="width: 5cm;"><i class="ri-file-excel-2-line label-icon align-middle fs-16 me-2"></i>Import Excel Sheets</button>
+                                                                    <br><br>                                                                                            
+                                                                    <button type="button" id="csv" onclick="uploadoptions(this)" class="btn btn-success btn-label waves-effect waves-light" style="width: 5cm;"><i class="ri-file-excel-2-fill label-icon align-middle fs-16 me-2"></i>Import CSV File</button><hr>-->
+                                                                </div>
+                                                                <div class="col-md-8" id="uploadoptions">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12">
+                                                                            <div class="card" id="emailslist">
+                                                                                <div class="card-header">
+                                                                                    <h4 class="card-title mb-0">Enter Emails</h4>
+                                                                                </div><!-- end card header -->
+                                                                                <div class="card-body">
+                                                                                    <textarea style="width: 100%; height: 8cm;" id="emaillist" placeholder="Enter one email address per line"></textarea>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer" id="card-btns">
+                                                            <a href="javascript:void(0);" class="btn btn-link link-success fw-medium" data-bs-dismiss="modal"><i class="ri-close-line me-1 align-middle"></i> Close</a>
+                                                            <button type="button" class="btn btn-primary" id="nextbtn" onclick="validateContactList()">Next</button>
+                                                        </div>
+                                                    </div><!-- /.modal-content -->
+                                                </div><!-- /.modal-dialog -->
+                                            </div><!-- /.modal -->
+                                        </div>
+                                    </div><!-- end card -->
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                        </div>
+                    </div>
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+            <script>
+                function dropdown(obj){
+                    if(obj.id == "ccon"){
+                        document.getElementById("Cc").innerHTML =
+                            `<div class="row mb-3">
+                                <div class="col-lg-1">
+                                    <label for="Cc" class="form-label">Cc</label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <input type="email" class="form-control" id="cc" placeholder="Enter Cc Recipient">
+                                </div>
+                            </div>`;
+                        document.getElementById("toggle-cc-btn").innerHTML = '<a class="dropdown-item active" id="ccoff" onclick="dropdown(this)">Cc</a>';
+                    }else if(obj.id == "ccoff"){
+                        document.getElementById("Cc").innerHTML = "";
+                        document.getElementById("toggle-cc-btn").innerHTML = '<a class="dropdown-item" id="ccon" onclick="dropdown(this)">Cc</a>';
+                    }else if(obj.id == "bccon"){
+                        document.getElementById("Bcc").innerHTML = 
+                            `<div class="row mb-3">
+                                <div class="col-lg-1">
+                                    <label for="Bcc" class="form-label">Bcc</label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <input type="email" class="form-control" id="bcc" placeholder="Enter Bcc Recipient">
+                                </div>
+                            </div>`;
+                        document.getElementById("toggle-bcc-btn").innerHTML = '<a class="dropdown-item active" id="bccoff" onclick="dropdown(this)">Bcc</a>';
+                    }else if(obj.id == "bccoff"){
+                        document.getElementById("Bcc").innerHTML = "";
+                        document.getElementById("toggle-bcc-btn").innerHTML = '<a class="dropdown-item" id="bccon" onclick="dropdown(this)">Bcc</a>';
+                    }else if(obj.id == "replytoon"){
+                        document.getElementById("Replyto").innerHTML = 
+                            `<div class="row mb-3">
+                                <div class="col-lg-1">
+                                    <label for="Bcc" class="form-label">Replyto</label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <input type="email" class="form-control" id="replytoemail" placeholder="Enter Replyto Recipient">
+                                </div>
+                            </div>`;
+                        document.getElementById("toggle-replyto-btn").innerHTML = '<a class="dropdown-item active" id="replytooff" onclick="dropdown(this)">Replyto</a>';
+                    }else if(obj.id == "replytooff"){
+                        document.getElementById("Replyto").innerHTML = "";
+                        document.getElementById("toggle-replyto-btn").innerHTML = '<a class="dropdown-item" id="replytoon" onclick="dropdown(this)">Replyto</a>';
+                    }
+                }
+            </script>
+            <style>
+                #div_editor1 {
+                    background-color: white !important;
+                    border-color: white !important;
+                    height: auto;
+                    min-height: 12cm;
+                }
+        
+                #div_editor1 rte-toolbar {
+                    background-color:white !important;
+                }
+        
+                #div_editor1 rte-bottom {
+                    background-color: #ffffff !important;
+                }
+        
+                #div_editor1 rte-dialog-inner {
+                    background-color: #ffffff !important;
+                }
+        
+                #div_editor1 rte-line-spliter {
+                    background-color: black !important;
+                }
+        
+                #div_editor1 rte-dialog-header {
+                    background-color: white;
+                }
+            </style>
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <script>document.write(new Date().getFullYear())</script> © TechMark.
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- end main content-->
+    </div>
+    <!-- END layout-wrapper -->
+
+    <!--start back-to-top-->
+    <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+    <!--end back-to-top-->
+
+    <!--preloader-->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner-border text-primary avatar-sm" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="../static/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="../static/assets/libs/node-waves/waves.min.js"></script>
+    <script src="../static/assets/libs/feather-icons/feather.min.js"></script>
+    <script src="../static/assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+    <script src="../static/assets/js/plugins.js"></script>
+    <!--Swiper slider js-->
+    <script src="../static/assets/libs/swiper/swiper-bundle.min.js"></script>
+    <!-- App js -->
+    <script src="../static/assets/js/app.js"></script>
+    <script src="../static/assets/main/add-campaign.js"></script>
+</body>
+</html>
